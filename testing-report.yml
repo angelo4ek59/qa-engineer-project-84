@@ -1,1 +1,88 @@
+---
+- summary: |
+    Форма регистрации пользователя
+  status: fail
 
+- summary: |
+    Смена языка 
+  status: pass
+
+- summary: |
+    Фильтрация товаров по названию 
+  status: pass
+
+- summary: |
+    Фильтрация товаров по категории
+  status: pass
+
+- summary: |
+    Фильтрация товаров по наличию
+  status: pass
+
+- summary: |
+    Фильтрация товаров по цене
+  status: pass
+
+- summary: |
+    Фильтрация товаров по производителю
+  status: pass
+
+- summary: |
+    Фильтрация товаров по производителю наличию цене
+  status: pass
+
+- summary: |
+    Просмотр товаров магазина
+  status: pass
+
+- summary: |
+    Просмотр описания страницы товара 
+  status: pass
+
+- summary: |
+    Просмотр карусели фотографии товара 
+  status: fail
+
+- summary: |
+    Кнопка "Возврата в список товаров"
+  status: fail
+
+- summary: |
+    Корзина добавление товара 
+  status: pass
+
+- summary: |
+    Корзина список товаров
+  status: pass
+
+- summary: |
+    Корзина штучное удаление товара 
+  status: pass
+
+- summary: |
+    Корзина кнопка "Очистить корзину"
+  status: pass
+
+- summary: |
+    Корзина кнопка "Продолжить покупки"	
+  status: pass
+
+- summary: |
+    Модальное окно добавления товаров 
+  status: fail
+
+- summary: |
+    Кнопка "Оформить заказ"
+  status: pass
+
+- summary: |
+    Оформление заказа иконка "Закрыть"
+  status: fail
+
+- summary: |
+    Оформление заказа кнопка "Закрыть"
+  status: pass
+
+- summary: |
+    Модальное окно подтверждения заказа 
+  status: fail
