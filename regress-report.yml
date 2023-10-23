@@ -1,4 +1,5 @@
 ---
+test-cases:
 - summary: |
     Форма регистрации пользователя
   status: fail
