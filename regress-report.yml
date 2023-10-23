@@ -15,7 +15,7 @@ bugreports:
     Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
     Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
   steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Визуально осматриваем страницу на наличие кнопки "Регисрация"
   expected-result: |
     На странице магазина есть кнопка "Регистрация" 
@@ -39,7 +39,7 @@ bugreports:
     Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
     Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
   steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Находим товар iPhone X
     3. Заходим на страницу товара iPhone X
     4. Визуально проверяем есть ли кнопка "Возврата в список товаров" на странице товара iPhone X
@@ -64,7 +64,7 @@ bugreports:
     Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
     Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
   steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Находим товар iPhone X
     3. Нажимаем кнопку "В корзину"
     4. iPhone X 1шт добавлен в корзину 
@@ -89,7 +89,7 @@ bugreports:
     Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
     Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
   steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Находим товар iPhone X
     3. Нажимаем кнопку "В корзину"
     4. iPhone X 1шт добавлен в корзину 
@@ -118,7 +118,7 @@ bugreports:
     Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
     Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
   steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Находим товар iPhone X
     3. Нажимаем кнопку "В корзину"
     4. iPhone X 1шт добавлен в корзину 
@@ -130,3 +130,90 @@ bugreports:
   actual-result: |
     Нет промежуточного модального окна с подтверждением заказа 
 
+test-cases:
+- summary: |
+    Адаптивность кнопка "Добавить в корзину" имеет корректный размер
+  status: pass
+
+- summary: |
+   Адаптивность кнопка "Добавить в корзину" увеличена английская версия
+  status: fail
+
+bugreports:
+- summary: |
+    Адаптивность кнопка "Добавить в корзину" в английской версии визуально увеличена
+  environment: |
+    Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
+    Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Визуально рассматриваем страницу магазина с товарами кнопка "Добавить в корзину"
+    Айфон 9 
+    Айфон Х 
+    Вселенная Samsung 9 
+    OPPOF19 Huawei 
+    P30 Макбук Про 
+    Samsung Galaxy 
+    Book Ноутбук 
+    Microsoft Surface 4 
+    Infinix INBOOK 
+    Павильон HP 15-DK1056WM 
+    3-х ярусные угловые полки 
+    Наручные часы с кожаными ремешками 
+    Кольцо с розой 
+    Черный мотоцикл 
+    ГОРЯЧАЯ РАСПРОДАЖА В ЕВРОПЕ электрический гоночный мотоцикл
+    Автоматические моторные газовые мотоциклы
+    новые поступления Модные очки для мотокросса
+    оптовая торговля груз крепежный ремень
+  expected-result: |
+    Кнопка "Добавить в корзину" в английской версии имеет корректный вид
+  actual-result: |
+    Кнопка "Добавить в корзину" в английской версии визуально увеличена 
+
+test-cases:
+- summary: |
+    Адаптивность кнопка "Добавить в корзину" имеет корректное метаположение 
+  status: pass
+
+- summary: |
+    Адаптивность кнопка "Добавить в корзину" сползла вниз английская версия
+  status: fail
+
+bugreports:
+- summary: |
+    Адаптивность кнопка "Добавить в корзину" в английской версии сползла вниз 
+  environment: |
+    Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
+    Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Визуально ищем товар Безалкогольное концентрированное парфюмерное масло 
+  expected-result: |
+    Кнопка "Добавить в корзину" в английской версии имеет корректное метоположение 
+  actual-result: |
+    Кнопка "Добавить в корзину" в английской версии визуально сползла вниз с карточки товара 
+
+
+test-cases:
+- summary: |
+    Адаптивность макет страницы имеет корректный вид 
+  status: pass
+
+- summary: |
+    Адаптивность макет страницы сбит   
+  status: fail
+
+bugreports:
+- summary: |
+    Адаптивность сбит макет страницы магазина  
+  environment: |
+    Microsoft Edge Версия 118.0.2088.57 (Официальная сборка) (64-разрядная версия)
+    Windows 10 Домашняя 21H2 20.‎05.‎2022 18087.3421
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. В поисковой строке магазина вводим название товара iPhone 9
+  expected-result: |
+    Макет страницы имеет корректный вид 
+  actual-result: |
+    Макет страницы сбит текст и некоторые блоки выходят за пределы не помещаются по размерам
